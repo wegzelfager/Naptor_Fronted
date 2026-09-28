@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+// ── Naptor Signal — Global Stylesheet Entry Point ────────────────────────────
+// Import order is intentional. Do NOT reorder without understanding the cascade.
+
+// 1. Reset — neutralize browser defaults before anything
+@import 'styles/reset';
+
+// 2. Design tokens — CSS custom properties (colors, spacing, radii, blur)
+@import 'styles/tokens';
+
+// 3. Typography — font imports, scale, weights
+@import 'styles/typography';
+
+// 4. Animations — @keyframes definitions
+@import 'styles/animations';
+
+// 5. Glassmorphism — reusable mixins (no output until consumed)
+@import 'styles/glassmorphism';
+
+// 6. Grid — layout utilities
+@import 'styles/grid';
+
+// 7. Utilities — margin, flex, visibility helpers
+@import 'styles/utilities';

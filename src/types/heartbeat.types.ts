@@ -1,0 +1,1 @@
+﻿// HeartbeatPoint, LatencyBucket, HeartbeatRange.
