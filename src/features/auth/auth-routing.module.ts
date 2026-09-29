@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'forgot-password',      component: ForgotPasswordPage,      canActivate: [guestGuard] },
   { path: 'reset-new-password',   component: ResetNewPasswordPage,    canActivate: [guestGuard] },
   { path: 'reset-password',       component: ResetNewPasswordPage,    canActivate: [guestGuard] },
-  { path: 'verify-email/:token',         component: VerifyEmailPage },
+  { path: 'verify-email',         component: VerifyEmailPage },
   { path: 'verify-email-pending', component: VerifyEmailPendingPage },
   { path: '',                     redirectTo: 'login', pathMatch: 'full' }
 ];
