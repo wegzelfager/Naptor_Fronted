@@ -73,7 +73,7 @@ export class VerifyEmailPage implements OnInit {
   error = this.store.selectSignal(selectVerifyEmailError);
 
   ngOnInit() {
-    const token = this.route.snapshot.queryParamMap.get('token');
+    const token = this.route.snapshot.paramMap.get('token') || this.route.snapshot.queryParamMap.get('token');
     if (token) {
       this.store.dispatch(authActions.verifyEmail({ token }));
     } else {
